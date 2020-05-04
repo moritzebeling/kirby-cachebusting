@@ -2,7 +2,7 @@
 
 Adds a fingerprint to referenced js and css files. Uses timestamp of last modification.
 
-Suggested by (https://forum.getkirby.com/t/plugin-assets-timestamp/13975/27)[]
+Suggested by https://forum.getkirby.com/t/plugin-assets-timestamp/13975/27
 
 Issues and PRs welcome.
 
