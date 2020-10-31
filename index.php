@@ -13,7 +13,7 @@ Kirby::plugin('moritzebeling/kirby-cachebusting', [
       }
       return $url;
     },
-	'js' => function (Kirby $kirby, string $url, $options = null): string {
+    'js' => function (Kirby $kirby, string $url, $options = null): string {
       $relative_url = Url::path($url, false);
       $file_root = $kirby->root('index') . DS . $relative_url;
       if (F::exists($file_root)) {
