@@ -1,11 +1,12 @@
 # Kirby Cachebusting, CDN friendly
 
-⚠️ This is taken from the Kirby website and source code and only here to simplify installation for myself via composer. Plese check:
+> ⚠️ This is taken from the Kirby website and source code and only here to simplify installation for myself via composer. Plese check:
+- https://getkirby.com/docs/cookbook/extensions/kirby-loves-cdn#cache-busting
+- https://github.com/getkirby/getkirby.com/blob/main/site/plugins/cdn/src/Cachebuster.php
 
-https://getkirby.com/docs/cookbook/extensions/kirby-loves-cdn#cache-busting
-https://github.com/getkirby/getkirby.com/blob/main/site/plugins/cdn/src/Cachebuster.php
+The plugin adds a fingerprint like `file.css?v=12345678` to every file added from the `/assets` folder using on of the Kirby helper methods like `css()` or `js()`.
 
-The plugin adds a finderprint like `file.css?v=12345678` to every file added from the `/assets` folder using on of the Kirby helper methods like `css()` or `js()`.
+Via the `moritzebeling.kirby-cachebusting.host` option, you can also add an remote host to the file url, e.g. when using a CDN.
 
 ## Setup
 
