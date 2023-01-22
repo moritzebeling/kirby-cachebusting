@@ -47,7 +47,7 @@ Kirby::plugin('moritzebeling/kirby-cachebusting', [
     ],
     'components' => [
         'url' => function ($kirby, $path, $options) {
-            if (Str::startsWith($path, 'assets')) {
+            if (Str::startsWith($path, 'assets') && option('moritzebeling.kirby-cachebusting', true) !== false) {
                 $path = Cachebuster::path($path);
 
                 if ( $host = option('moritzebeling.kirby-cachebusting.host', false) ){
