@@ -8,6 +8,13 @@ The plugin adds a fingerprint like `file.css?v=12345678` to every file added fro
 
 Via the `moritzebeling.kirby-cachebusting.host` option, you can also add an remote host to the file url, e.g. when using a CDN.
 
+## Installation
+
+```
+composer require moritzebeling/kirby-cachebusting
+composer update moritzebeling/kirby-cachebusting
+```
+
 ## Setup
 
 ```php
@@ -18,3 +25,7 @@ return [
     // ...
 ];
 ```
+
+## Usage
+
+Just us the `css()` and `js()` helper methods to include your styles and scripts.

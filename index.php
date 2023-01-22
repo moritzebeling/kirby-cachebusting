@@ -6,7 +6,6 @@ use Kirby\Cms\App;
 use Kirby\Cms\App as Kirby;
 use Kirby\Toolkit\Str;
 
-
 class Cachebuster {
     
     /*
@@ -52,7 +51,7 @@ Kirby::plugin('moritzebeling/kirby-cachebusting', [
                 $path = Cachebuster::path($path);
 
                 if ( $host = option('moritzebeling.kirby-cachebusting.host', false) ){
-                    return $host . '/' . $path;
+                    return trim($host,'/') . '/' . $path;
                 }
             }
             $original = $kirby->nativeComponent('url');
