@@ -32,9 +32,9 @@ return [
 
 Just use the `css()` and `js()` helper methods to include your styles and scripts.
 
-## 🚧 Development
+## Development
 
-1. Install yourself a fresh Kirby StarterKit
+1. Install a fresh Kirby StarterKit
 2. `cd site/plugins`
 3. `git clone` this repo
 
